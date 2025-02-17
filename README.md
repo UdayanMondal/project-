@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/fb6775da-319b-46f0-bec0-7dc1e4847107)![image](https://github.com/user-attachments/assets/34da64d4-5943-4e22-9e85-bea82d0424e1)Start Zookeeper 
+Start Zookeeper 
 
 .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 
