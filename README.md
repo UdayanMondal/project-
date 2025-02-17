@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/0ed086ca-e2c4-4b25-907f-e55b4b4403d1)![image](https://github.com/user-attachments/assets/2eebffcb-e802-443b-b382-d1c1ddc5de6d)![image](https://github.com/user-attachments/assets/105998d3-250e-4485-baa4-1df5fc53f0b6)![image](https://github.com/user-attachments/assets/bad3278f-62f7-40f1-8388-a8c9799cc91f)![image](https://github.com/user-attachments/assets/d9e14bbd-776f-453c-af35-7c22a99854b6)Start Zookeeper 
+Start Zookeeper 
 
 .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
 
@@ -33,8 +33,8 @@ Kafka Consumer
 To List the Database use : 
 > show databases
 
-		To Create new Database 
-		> use projectXYZ
+To Create new Database 
+> use projectXYZ
 To drop Database 
 > use project
 > db.createCollection(‘data’)
@@ -130,9 +130,6 @@ $limit :- Limits the number of documents in the output
 $skip :- Skips the first N documents.
 $lookup :- Performs a left outer join to a specified collection and adds matching documents to the result
 $out :- It is used to write the output of the aggregation pipeline to a specified collection, replacing the entire content of the target collection.
-
-
-
 
 
 
