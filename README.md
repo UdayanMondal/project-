@@ -185,6 +185,8 @@ argo documentation - https://argo-cd.readthedocs.io/en/stable/getting_started/
 
 kubernate project -https://github.com/kubekode/DevOps-Projects/tree/React-GKE-pulumi
 
+devop project -https://github.com/iam-veeramalla
+
 
 
 
