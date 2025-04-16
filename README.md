@@ -215,6 +215,37 @@ Advanced
 19. Given a list of strings find the first element having the length as 10 if not handle exceptions
 20. Reverse the list of strings using streams api
 
+Top 20 coding interview questions in Streams API
+Using List of Numbers
+Basics
+1. Get the even/odd numbers from an array of numbers and list of numbers
+2. Get the even/odd numbers between a range 
+3. Sort a list of integers in descending/ascending order  
+4. Calculate the sum and average of numbers in an array and list of numbers
+5. Find the maximum/minimum number in an array/list of numbers 
+
+Intermediate
+6. Remove duplicate elements from an array/list of integers
+7. Convert a list/array of integers to a list of their squares and print them
+8. Find the sum of squares of all the numbers in the array/list.
+9. Get the second largest number and second smallest  number in a list/array
+10. Get the first number greater than 50 in a list/array
+
+Advanced
+11. Get the sum of numbers of a two dimensional array and list of list of integers
+12. Convert an array of integers into a map where the key is the number and the value is its square
+13. Partition an array of integers into two groups: even and odd using Streams.
+14. Calculate the product of all numbers in the array using reduce
+15.implement a parallel stream that computes the sum of squares of numbers in an array.
+-----------------------------------------------------------------------------------------------------------
+
+What You’ll Learn:
+Filtering Strings: How to filter out specific elements from a list using filter().
+Transforming Data: Using map() to convert data and modify elements in the list.
+Sorting Strings: Sorting a list of strings based on specific criteria.
+
+Finding Elements: Using findFirst() and findAny() to search within a stream.
+Reducing Data: Applying reduce() to aggregate or combine elements of a list.
 
 
 
