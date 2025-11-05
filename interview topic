@@ -1,0 +1,51 @@
+For the technical interview for Java, please prepare the following topics:
+1.	Java OOP concepts
+o	Constructors in detail - what and why, constructor chaining
+o	Static keyword in detail - Static method, static block, overriding static methods
+o	Final keyword usage with examples
+o	Java Inheritance
+o	Java Polymorphism - Runtime Polymorphism, Static and Dynamic binding – How do we implement
+o	Encapsulation – How do we implement
+o	Abstraction
+o	Aggregation and Composition
+o	Access modifiers in Java
+•	Exception Handling - Exception propagation in Java, Checked and Unchecked exception, throws and throw keywords, finally keyword, try with resources, difference between error and exception, custom exceptions
+•	Java Multithreading
+o	Thread LifeCycle
+o	Executor framework
+o	Future Object, CompletableFuture
+•	Functional Interfaces - Detailed understanding, Types of functional interfaces (Consumer, Predicate, Supplier) and why these are important. Should be able to write code for that 
+•	Stream API - Hands on programming using Stream API, Should be able to write programs using Stream API – Intermediate and Terminal functions
+•	Synchronization in Java
+•	Collections - Detailed understanding, Internal working of hashmap, equals and hashcode method usage
+•	Java 8 new features, Java 11 new features, Java 17 new features.
+•	Lambda function - Should be able to write program
+•	Springboot
+o	Dependency Injection (DI) and Inversion of Control (IoC): Understand how Spring manages beans and their dependencies.
+o	Annotations: Familiarize yourself with annotations like @Component, @Service, @Repository, @Configuration, @Autowired, @Value, etc.
+o	Bean Scopes: Understand singleton, prototype, request, and session scopes.
+o	Profiles: Learn how to activate different configurations based on environments.
+•	SOLID Principle – Along with coding examples
+•	Spring Security – Authentication/ Authorization, JWT Token, How to secure your applications
+•	Microservices – Coupling and Cohesion, Microservice Design Patterns – Eg. Circuit Breaker, Saga Pattern, Orchestration and Choreography
+•	REST API – HTTP methods – get, put, post, patch, delete
+•	Maven Lifecycle
+•	Spring Bean Lifecycle
+•	Concurrent/Parallel programming
+•	String class 
+String test = “” vs String test = new String()
+String immutability
+.equals vs ==
+•	Class Immutibility, Comparator, Comparable.
+•	Design Patterns
+Singleton/Factory
+•	SQL query – Should be able to write queries with aggregate functions – RANK, DENSE_RANK
+•	Memory management – Understanding to heap and stack memory, garbage collections (Java 8 and Java 17), Analysis of Java heap dump, Tools used for analysing, how do you handle memory exception
+•	Performance handling – How to approach
+•	Swagger Open API, Postman
+•	Hibernate or any ORM tool – Details about it – 1st Level Cache, 2nd level Cache
+•	Out of memory exception – How do you handle
+•	CI/CD, Devops
+•	Unix Shell Commands
+•	
+
