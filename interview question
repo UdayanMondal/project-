@@ -1,0 +1,480 @@
+1) Department-wise max salary from List of Employee
+2) We have array list of 5 lacs records, and we have to do some modification(update/delete) from 1 to 2 lac records.  Is ArrayList still the right choice, or should you use some other collection?
+3) Design Pattern & expalnation of 1 or 2 types. How to make thread safe in singleton 
+4) HashSet vs LinkedHashSet
+5) There is frequent read and write operations are getting performed by multiple threads. which collection can be used for this functionality?
+6) If ConcurrentHashMap for above used and one thread is reading and another thread is writing on the same bucket, what will happen?
+7) Java 17 features. Any memory management related feature available?
+8) Java 8 features. Different functional Interfaces and its use
+9) Why stream api is needed or what are adavntages of using streams
+10) What is ApplicationContext. what is difference between ApplicationContext and BeanFactory
+11) what things need to change/add while migrating application from spring to spring boot?
+12) How an existing xml-based Bean configuration from Spring based project can be used in spring boot
+13) How to monitor deployemnt failure / services active or not in production without checking logs
+14) CI-CD pipeline configuration or Deployment Steps in your last project.
+15) Advantages of Spring boot over Spring
+16) Difference between lambda and Functional Interface. Can we pass lambda expression as a functional interface parameter
+17) Benefits of using Streams over traditional for loop
+18) what will happen when we add/remove elements while iterating in streams & traditional for loop
+19) Are equals() and hashCode() implemented in Integer and String?
+20) What happens if you use a class like Integer or String or any custom class without overriding equals() and hashCode(). consider sceanrio operation we have logic for getting max number from list
+
+Write a program for occurence of character in string using stream
+ 
+Write a program of square of elements in array and sum of them
+Write flatmap program
+			
+1. Do you know about the singleton Pattern? Type it down and explain. My code defined the instance as an eager load, as I typed in it the class as a class static variable. How can we make the instance lazy load?
+2. How can we make it so the class cannot be cloned? 
+3. How can we make a class immutable? How can using final in the constructor work? How to make it thread-safe? After answered with  synchronized keyword, where can we use it? Use of synchronized on a static method or class will lock all methods in it. What alternative we can use? 
+4. Explain the SOLID principles.
+5. how to sort a list of words and map it to uppercase using StreamAPI?
+6. In an EMployee class with Employee_id, department_name, salary
+	a. Using StreamAPI, find the max salary for each department
+7. Write an SQL query to left join an Employee table to Department table
+8. Explain the outer join, left join and right join
+9. In REStapi, which annotations have you used and what was it used for?
+10. Why use @PathVariable?
+11. What are the Stages of REST?
+12. Why is SpringBoot in existence? What benefit is it used for?
+13. Name some java 11 and java 7 features
+14. Tell me the java 8 featurmes.
+15. What is functionalInterface?
+16. How can the use of lambda be made to define the working of a functionalInterface?
+17. Which collections have you worked on?
+18. Which methods does the object class have?
+19. For making the abovementioned Employee class a key for a map, what am I expected to do?
+20. What is hashcode and equals methods in map?
+21. What is the difference between @Component and @Service?
+22. What are the different ways of dependency injection?
+23. What are the stages or states in a hibernate object?
+24. What is difference between JPA and Hibernate?
+25. What is your daily life like in your project? What tasks and steps you perform on a usual day?
+26. How is LISKOV used? Why is it used?
+27. If I wish to change the server in spring boot, what steps to perform?
+28. To connect to the db, how is the code connected to the DB?
+29. What annotations in SpringBoot have you used?
+30. What are the SONARQUBE issues you have fixed? Do you know about cyclometric complexity? After answered, he asked me do you know how the cyclometric complexity value is set and calculated in the SONARQUBE?
+
+write an functional Interface and define abstract class consuming 2 integers and returning 1 int as output.
+what are abstract class and provide an example
+difference between abstract class and interface
+solid principles
+how the input data will be consumed from third party if they are providing data and in which layer they fall
+write a class of employee with few parameters and make its objects sorted in class level itself
+have you worked in Jenkins, kubernetes
+how you will deploy the service
+explain micro service architecture
+Design principles
+java 17 features
+how to perform multi threading and example that you worked on
+
+First non-repeating character - "nonrepeat",
+different b/w Hasmap and linkedHasMap,
+difference b/w @service and  @Repository,
+use of @Bean  
+How to resolve Bean initialization Exception
+Bean life cycle
+SOLID principle 
+dependency injection
+use of @Autowire
+which one is good for DI - constructor or @Autowire
+write a service and repository class and get name of employee name
+query optimization 
+java code performance
+mvn life cycle
+how we can add some default value at the time of starting our application
+
+1. Given Input: [6, 1, 8, 5, 2, 10, 17, 25, 6, 5, 1, 8, 8]
+Sorted Distinct Elements: 1 2 5 6 8 10 17 25 
+without collections or stream api.
+ 
+2. In the given program, method1, 2 and 3 are different microservices. If 1 & 2 executed successfully, and 3 is failed. How the complete rollback 
+happened with method1 and method2 unchanged? Approach.
+a) If we make it @component class what will be the challenge or result.
+b) If we make it @service class will that work? How?
+c) If we make it @Controller class will it work? How?
+d) differences between these annotations.
+SomeService{
+@Autowired
+Service1 service1;
+@Autowired
+Service2 service2;
+@Autowired
+Service3 service3;
+
+service1.method1();
+service2.method2();
+service3.method3()
+}
+ 
+3. Java 8 to 17 migration, what challenges faced during setup and after migration?
+ 
+4. ConcurrentException - Have you faced it in your existing project? How it will resolved?
+ 
+5. How multithreading used in your last project? write the code?
+ 
+6. Write Singleton code with thread safe.
+ 
+7. Write code on immutable class.
+ 
+8. Person is Parent and Employee is child class.
+Person p = new Employee();
+p.print(); - which method will be called?
+p.show(); -> if this is static method, what will be output?
+ 
+9. final Employee e = new Employee();
+e.setName("Temp"); - will this run? How? Explain?
+ 
+10. What will be the output of below program? if error what error will be thrown? 
+e1 = new Employee("1", "abc");
+e2 = new Employee("1", "abc");
+e3 = new Employee("1", "abc");
+map = new Hashmap();
+map.put(e1, "str1");
+map.put(e2, "str2" );
+sysout(map.get(e3));
+sysout(map.get(new Employee("1","abc")))
+ 
+11. What is SOLID?
+ 
+12. Write code on Open/Close principle
+ 
+13. What is  CompletableFuture?
+ 
+14. List of collections are thread safe?
+
+Suppose we have Producer and consumer; producer has 1 to 10 numbers which consume by consumer.
+Write a program if any number failed to consume by Consumer then Producer should not send next number.
+Expected to write code in multithreading.
+ 
+Given Input: [6, 1, 8, 5, 2, 10, 17, 25, 6, 5, 1, 8, 8]
+Sorted Distinct Elements: 1 2 5 6 8 10 17 25
+ 
+Write code, how to resolve cyclic dependency.
+ 
+Singleton class code? If we add Synchronized getObject method, then how it will impact on performance and how to overcome this?
+ 
+Write code on blocking queue?
+ 
+Write code on dead lock?
+ 
+ 
+ 
+Spring scopes in deep.
+Spring security? How browser store token? End to end implementation?
+How @Autowired works internally?
+what happens if we add @component annotation in Rest api controller
+ 
+there are few more will ping you, can not recall now.
+ 
+Sort the elements using pure java concepts.
+Given Input: [6, 1, 8, 5, 2, 10, 17, 25, 6, 5, 1, 8, 8]Sorted Distinct Elements: 1 2 5 6 8 10 17 25 
+ 
+Print the greatest number from the below sentence
+Input: "abcd 45, 54 and 50 are the numbers"
+ 
+Print smallest and largest word from the sentence
+This problem is solved
+
+ 
+Spring Boot, Spring Security, Performance issues how to resolve, Memory management and issues 
+ 
+What challenges did you faced while using hibernate and how did you fix it 
+Query optimization 
+Can we create index on all the columns of the table If yes then why if no then y 
+Difference between left join and innner join 
+Microservice Architecture 
+What is saga design pattern 
+How to implement threadsafe 
+What are immutablee object 
+Internal working of hashmap 
+If we use mutable object as key in hashmap will the hashcode value change ? 
+Bean scope 
+@Transactional  
+Benefits of Hibernate 
+What is dependency injection 
+What is SPRING IOC 
+Who manages transaction management in spring 
+About Having clause 
+Which is better synchronized block or synchronized method 
+tell me thread safe hashmap 
+what is thread safe
+
+Please find the questions below -What are different type of Transaction isolation level and which one default isolation level ?
+How many non-clustered indexes can a table have ?
+SQL Query - Get Employees name with highest salary per department
+program - write a program to find the name from list which start with 'a' ?
+Program- write a program create a customize predicate which extends the predicate ?
+@RestController and @ResponseBody -how it work ?
+Microservice design pattern and explain any one design pattern ?
+How to secure restapi ?
+Any working experience on Angular and which version of angular you have worked on ?
+What is webhook?
+experience on Jenkins?
+
+1. Custom Exception handling- anything wrong in the below code, where it says throws BusinessException
+	try{
+	//get required details from database
+	//business validation
+	}
+	catch(Exception | BusinessException s){
+		log.error();
+	}
+	class BusinessException{ constructor
+	}
+ 
+2. Given list of employee with name, Address. Address holds state, print list of employee based on state , Output should be State - Name
+ 
+3. Design patterns - given a scenario on messaging and notification and asked to choose a design pattern, creational pattern.
+4. SOLID design principle
+5. Given a code and asked to identify which design pattern it is in SOLID principle
+ 
+class Rectangle{
+	public double width;
+	public double heigth;
+}
+class Circle{
+	public double radius;
+}
+class AreaCalculator{
+	public double calculateRectangleArea(Rectangle rectangle){
+		return rectangle.width * rectangle.length;
+	}
+	public double calculateCircleArea(Circle circle){
+		return Math.PI * circle.radius * circle radius;
+	}
+}
+6. From above code, how to refactor this to factory design pattern
+7. Given list of users and where do you store the user details configuration via application properties and how to access them ?
+
+WAP that accepts csv file of Employees as input and extracts data from it and stores it in a collection using stream
+WAP and a method in java that prints the class of the object which is passed as param to the method
+print the second and third highest salary
+what are the differnent operations in stream
+what is functional interface and abstract class. Need of each 
+design pattern questions
+spring uses which design pattern
+maven lifecycle
+deployment process used in my current project
+IOC and DI concepts
+what is request and session
+what is the lifecycle of request and session
+differnce betwn @Configuration and @Bean
+
+write an functional Interface and define abstract class consuming 2 integers and returning 1 int as output.
+what are abstract class and provide an example
+difference between abstract class and interface
+solid principles
+how the input data will be consumed from third party if they are providing data and in which layer they fall
+write a class of employee with few parameters and make its objects sorted in class level itself
+have you worked in Jenkins, kubernetes
+how you will deploy the service
+explain micro service architecture
+Design principles
+java 17 features
+how to perform multi threading and example that you worked on
+
+solid principles
+DI in Spring
+Types of DI. What should be preferably used
+what is field injection
+Setting up the environment for JPA integration
+Types of annotations used in data integration
+Types of ORM models
+Extracting complex data from multiple tables using persistence layers
+Multi threading in Spring
+Complex scenario where you have used multi threading
+Blocking thread module as opposed to asynchronous multi thread 
+Bean declaration and scope
+How to achieve Bean inter dependency
+Program - You are given an integer array nums, an integer array queries, and an integer x.
+Queries array represents occurrences. For each queries[i], you need to find the index of the queries[i]th occurrence of x in the nums array. If there are fewer than queries[i] occurrences of x, the answer should be -1 for that query.
+Return an integer array answer containing the answers to all queries. 
+Input: nums = [1,3,1,7], queries = [1,3,2,4], x = 1  Output: [0,-1,2,-1]
+Explanation - Find if value of x occurs 1,3,2 and 4 times in "nums" array. If occurrence count matches, return index from nums array. For all the non matching occurrences return -1
+ 
+x    queries     nums    output           Comment
+-------------------------------------------------------------------
+1        1     1,3,1,7      0      1 occurrence found in 0th location
+1        3     1,3,1,7      -1     3 occurrences of "1" not found
+1        2     1,3,1,7	    2      2 occurrences found in 2nd location
+1        4     1,3,1,7      -1     4 occurrences of "1" not found
+
+
+Program to find number of occurrence of a word from list using stream Api.
+How to remove null and " " blank space from list.
+what is MVC, describe the flow of MVC application.
+What is IOC Container ?
+SOLID principal
+What is stereotype annotation in spring boot ?
+Difference between @Bean and @component.
+What are the annotation use to build a Rest Api ? Explain all annotation like Put, Post, Delete, Get, etc..
+Difference between @Controller and @RestController and when should we use Controller and RestController.
+write program to show the use of functional interface.
+
+Program to find number of occurrence of a word from list using stream Api.
+How to remove null and " " blank space from list.
+what is MVC, describe the flow of MVC application.
+What is IOC Container ?
+SOLID principal
+What is stereotype annotation in spring boot ?
+Difference between @Bean and @component.
+What are the annotation use to build a Rest Api ? Explain all annotation like Put, Post, Delete, Get, etc..
+Difference between @Controller and @RestController and when should we use Controller and RestController.
+write program to show the use of functional interface.
+ 
+Write a program for occurence of character in string using stream
+ 
+Write a program of square of elements in array and sum of them
+Write flatmap program
+ 
+L1 Interview Questions:
+1. Static Variables, Methods and Blocks, Interviewer will give you a code and he will ask what will be the output after execution.
+(Note : He can ask multiple questions on this topic )
+2. SQL Query - Get Employees name with highest salary per department
+3. Functional Interface along with code
+4. Streams Vs Collection
+5. Final Vs Immutable
+6. Deployment Steps in your last project.
+7. Can we override @Value Annotation
+8. Java 8, Java 11, Java 17 Features
+9. Java 8 Future with code
+10. Singleton Class with Code
+11. Exceptions ( anything he can ask on this)
+e.g. how you handle out of memory exception in your project.
+12. Cloud services you know or worked on.
+13. Docker
+14. Jenkins
+ 
+-Static block - code snippet based questions
+-Functional interface - supplier, consumer (write code for consumer)
+-Callable (write code for callable)
+-Design pattern
+-singleton write code, then make it thread safe
+-factory pattern
+-What is <? Extends Numbers> in List<? Extends Numbers> list = new ArrayList<Integers>
+-Adv of Spring boot over Spring
+-Different FW in spring boot that you have worked on
+-How to create custom annotation
+-Difference between PUT and Patch
+-Difference between Get and Post
+-Can we use get for posting data
+-Hibernate - what is session caching
+-Do we need @id necessarily in entity
+-Tell one technical challenge that you overcome and you are proud of.
+ 
+1.Java 17 Feature.
+2. Write a program for occurence of character in string using stream API
+3. Explain how to execute above program step by step.
+4. They give one program(Try catch block program) and asking what happend in code like compilation error or not.
+5.SpringBoot... Annotation for @Component, @Service, @Repository, @Configuration, @Autowired, @Value, etc.
+6.Expalain the maven Lifecycle
+7.Exceptions ( They are asking anything on this Exceptions topics) like how to handel NullPointerException.
+8.Spring Security.
+9. what is purpose of this enable Web Security.
+10. How does this intersecting of request works if i get any request from the backend.
+11. where do you store the authentication details like the username and password.
+12. Multi-Threading(They asking anything) Like How to handel multi-Threading in springboot application.
+
+1> Print the greatest number from the below sentence
+Input: "abcd 45, 54 and 50 are the numbers"
+ 
+2> What will be the output of below program? if error what error will be thrown? 
+e1 = new Employee("1", "abc");
+e2 = new Employee("1", "abc");
+e3 = new Employee("1", "abc");
+map = new Hashmap();
+map.put(e1, "str1");
+map.put(e2, "str2" );
+sysout(map.get(e3));
+sysout(map.get(new Employee("1","abc")))
+ 
+3> Person is Parent and Employee is child class.
+Person p = new Employee();
+p.print(); - which method will be called?
+p.show(); -> if this is static method, what will be output?
+4> final Employee e = new Employee();
+e.setName("Temp"); - will this run? How? Explain?
+ 
+5> Explain Design Pattern( Type of DP)
+ 
+6> Explain about your current project and got any challenges
+ 
+7> What is microservices
+
+
+1. Functional Interface: predefine interface like predicate, consumer etc.
+with one example.
+2. Bean scope, when to use theme.
+3. Circular bean issue & how to resolved.
+5. Hibrante cache and second level of cache.
+6. In one application how to use mulitple cache with session factory
+7. sql question, get all data of employee where job role is manager.
+8. minimum & maximum salary of employee without using inbuild function.
+9. desing pattern, like singleton with lazy load & thread safe.
+10. proxy pattern where it's use in real time example.
+11. Interface & abstract, when to use
+12. Functional interface filter with example.
+13. docker, Kubernetes and Jenkins uses & flow of working.
+14. previous project details, roles & responsibility.
+
+1. Explain your previous project
+2. Static method calls in runtime polymorphism
+3. Explain effective final with code.
+4. Explain future object. How can we access them
+5. Difference between final and immutable object, can a list be final or immutable?
+6. Difference between stack overflow and memory out of bounds exception. Write code for stack overflow exception.
+7. Write code for builder design pattern. Write code for singleton design. What will happen if the constructor is made public in singleton?
+8. Can singleton design pattern broken by using reflection?
+9. Instead double checked locking can I check if object is created in the constructor?
+10. Print the character which are occurring more than once and it should he case insensitive.
+11. Can we create another stream inside an ongoing stream?
+12. How can a value from application.properties can be accessed in service layer?
+13. What will happen if the property is not in application.properties file but accessible in service layer?
+14. How to provide default value in @value annotation?
+15. What will happen if spring.datasource is not provided? What will happen to the bean creation of jdbc?
+16. Write sql query to fetch employee_name, department, maximum salary from employee table.
+17. Explain any production issues you have faced with solution and what were the steps taken during analysis
+18. Method names to access the object post Completablefuture?
+19. What is the most challenging task you have done till now?
+
+final Vs finally -> use case of final class and final method
+program - Sachin likes football --- football  to cricket (last word should be replace)
+java 8 all methods - > predicate, function with coding.
+write a program using predicate find odd numbers from list
+comparator and comparable use cases 
+what is devtools ?
+ RequestMapping and GETmapping diff
+all the employee details who in the manager position- using two tables. 
+bean life cycle - stages
+spring and spring boot diff
+Most question from java 8
+what does singleton scope do in spring boot
+explain lambda and write the Constructor, from java to java8
+
+Regarding current project and what is daily routine int the project
+what you used for synchronous and Asynchronous in your microservices 
+how to implement singleton
+how to make singleton in multithreading
+how you implemented singleton in spring boot
+ 
+SQL: Max salary
+SQL: second highest salary
+ 
+Program: list of integer find duplicate number and count of duplicate numbers.
+
+1) tell me about your recent project
+2) Difference between future and completable future
+3) Have you worked on Spring Security in your project
+4) Security Context
+5) In SpringApplication,what is the default cache it uses
+6) How to create a cache using basic data structure in java
+7) HashMap internal working
+8) cache might increase,how to control it
+9) cache eviction policies
+10) If java queries running slow,whats the reason
+11) Difference between union or union all
+12) ci/cd Jenkins/fabric
+ 
+ 
